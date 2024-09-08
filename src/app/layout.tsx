@@ -1,4 +1,5 @@
 import Footer from "@/app/_components/footer";
+import Header from "@/app/_components/header";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -60,6 +61,7 @@ export default function RootLayout({
       <body
         className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
       >
+        <Header />
         <ThemeSwitcher />
         <div className="min-h-screen">{children}</div>
         <Footer />

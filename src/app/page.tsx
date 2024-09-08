@@ -15,6 +15,7 @@ export default function Index() {
     <main>
       <Container>
         <Intro />
+
         <HeroPost
           title={heroPost.title}
           coverImage={heroPost.coverImage}
